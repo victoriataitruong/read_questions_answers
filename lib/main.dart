@@ -135,9 +135,9 @@ class ReadQAState extends State<ReadQA> {
     },
     {
       'question':
-          '20. What is the difference between hot restart and hot reload?',
+          '20. What is the difference between GetX, BLoC and Provider? Which one you prefer and why?',
       'answer':
-          'Hot reload updates the code changes in the running app, while hot restart resets the entire app and restarts it from the beginning.',
+          'GetX, BLoC, and Provider are all state management solutions in Flutter. They help manage the state of your application, which refers to the data or information that can change over time and affect how the UI is displayed. Provider is the go-to due to its simplicity and scalability. However, if working on something with complex logic or a long-term project, I’d prefer BLoC for its more structured approach. GetX would be my choice when speed and ease of development are the top priorities.',
     },
     {
       'question': '21. What is `Image` widget used for?',
