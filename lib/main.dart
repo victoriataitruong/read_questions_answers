@@ -43,7 +43,7 @@ class ReadQAState extends State<ReadQA> {
     {
       'question': '3. What is a widget?',
       'answer':
-          'In Flutter, a widget is a UI component that describes the structure of the application interface.',
+          'In Flutter, a widget is a basic building block of the user interface, representing a UI element such as a button, text, or layout structure. Widgets are either stateful (can change over time) or stateless (remain fixed), and they can be combined to create complex UIs.',
     },
     {
       'question': '4. What is the concept of class in Flutter?',
@@ -71,7 +71,7 @@ class ReadQAState extends State<ReadQA> {
     {
       'question': '8. How would you monitor errors in a Flutter application?',
       'answer':
-          'You can use tools like Flutter’s error handling mechanisms, Firebase Crashlytics, or Sentry for error monitoring in Flutter applications.',
+          'To monitor errors in a Flutter app, you can use tools like Sentry, Firebase Crashlytics, or Bugsnag to automatically capture and report crashes and exceptions. Additionally, you can handle errors globally using FlutterError.onError, debug with dart:developer, and customize error handling with custom widgets for release builds.',
     },
     {
       'question':
@@ -86,9 +86,9 @@ class ReadQAState extends State<ReadQA> {
           'I would perform thorough testing, check for performance optimizations, ensure proper error handling, run security audits, and verify that the app runs smoothly across devices.',
     },
     {
-      'question': '11. What is Dart and why does Flutter use it?',
+      'question': '11. Why does Flutter use Dart?',
       'answer':
-          'Dart is a client-optimized programming language developed by Google. It is used in Flutter for building fast and efficient applications.',
+          'It is used in Flutter for building fast and efficient applications.',
     },
     {
       'question':
@@ -131,11 +131,11 @@ class ReadQAState extends State<ReadQA> {
       'question':
           '19. What is the difference between Flutter SDK and Flutter framework?',
       'answer':
-          'The Flutter SDK contains the tools and libraries to develop Flutter apps, while the Flutter framework is a set of pre-built components and APIs to build mobile applications.',
+          'The Flutter SDK is the complete toolkit for developing Flutter apps, including all necessary tools and libraries. The Flutter framework is a part of the SDK that provides pre-built components and APIs for building the user interface and app behavior.',
     },
     {
       'question':
-          '20. What is the difference between GetX, BLoC and Provider? Which one you prefer and why?',
+          '20. What is the difference between GetX, BLoC and Provider?',
       'answer':
           'GetX, BLoC, and Provider are all state management solutions in Flutter. They help manage the state of your application, which refers to the data or information that can change over time and affect how the UI is displayed. Provider is the go-to due to its simplicity and scalability. However, if working on something with complex logic or a long-term project, I’d prefer BLoC for its more structured approach. GetX would be my choice when speed and ease of development are the top priorities.',
     },
@@ -544,6 +544,16 @@ class ReadQAState extends State<ReadQA> {
       'question': '100. What is the purpose of the `build()` method?',
       'answer':
           'The `build()` method is used to describe the UI of a widget by returning a widget tree based on the widget’s state or data.',
+    },
+        {
+      'question': '101. What is the difference between unit, widget and integration tests in Flutter?',
+      'answer':
+          'Unit Test: Focuses on testing small, isolated pieces of logic (e.g., functions or methods). Widget Test: Tests individual widgets and their interactions within the UI, but doesnt involve the entire app. Integration Test: Validates complete app workflows, including interactions between various components and external systems, in a real or simulated environment.',
+    },
+            {
+      'question': '102. Before releasing a app to production, what steps you consider to make sure the functionalities are working fine and also if it is optimized or not?',
+      'answer':
+          'Before releasing an app to production, ensure thorough functional testing (unit, integration, E2E, UAT) and performance optimization (load/stress testing, profiling, caching). Additionally, conduct security audits, code reviews, scalability checks, and set up monitoring, error tracking, and deployment strategies to ensure the app performs well and remains secure in production.',
     },
   ];
 
